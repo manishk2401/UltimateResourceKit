@@ -1,0 +1,149 @@
+* {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    box-sizing: 0px;
+}
+
+body {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100vw;
+}
+
+header {
+    width: 50px;
+    position: fixed;
+    left: 0px;
+    background-color: white;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin-left: 50px;
+}
+
+.side-nav {
+    display: flex;
+    height: 95vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.side-nav div {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-nav {
+    display: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.left-side {
+    background-color: rgb(250, 250, 250);
+}
+
+.avatar-user {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-content {
+    margin-left: 15px;
+}
+
+.avatar-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.content-card * {
+    font-weight: bold;
+    margin: 0;
+}
+
+.content-card.card-2 p {
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.avatar-text {
+    font-size: 0.8rem;
+}
+
+.account-details,
+.recent-trans {
+    padding: 1.2rem 2.5rem;
+}
+
+.transition-item div,
+.widget-item .content,
+.strategy-item h6 {
+    font-size: 0.7rem;
+}
+
+.transition-item .date {
+    color: gray;
+}
+
+.transition-item .content,
+.widget-item .content {
+    color: gray;
+    font-weight: bold;
+}
+
+.widget-item h6 {
+    font-weight: bold;
+}
+
+.left-side,
+.center-side,
+.right-side {
+    padding-top: 25px;
+}
+
+.retirement-strategy {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 250, 250);
+    padding: 1rem 2rem;
+}
+
+.extra-content * {
+    font-size: 0.8rem;
+}
+
+.extra-content span {
+    font-weight: bold;
+}
+
+.extra-content small {
+    font-size: 0.7rem;
+    color: gray
+}
+
+@media only screen and (max-width: 767px) {
+    header {
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        z-index: 999;
+    }
+
+    .wrapper{
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+
+    .side-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+}
